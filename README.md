@@ -27,7 +27,7 @@
 ## 📦 Запуск проекта
 
 ```bash
-git clone https://github.com/your-username/yeahub-questions.git
+git clone https://github.com/dimaparamonovv/yeahub-questions.git
 cd yeahub-questions
 npm install
 npm run dev
