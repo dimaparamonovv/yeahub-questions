@@ -1,0 +1,30 @@
+.labels {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.label {
+  padding: 6px 14px 6px 10px;
+
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: var(--color-text);
+  background: var(--color-bg);
+
+  border-radius: 11px;
+}
+
+.badge {
+  min-width: 24px;
+  height: 24px;
+  padding: 0 6px;
+  margin-left: 10px;
+
+  font-size: 0.97rem;
+  line-height: 24px;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 8px;
+}

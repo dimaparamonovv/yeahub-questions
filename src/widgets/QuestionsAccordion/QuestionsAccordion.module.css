@@ -1,0 +1,155 @@
+.wrapper {
+  width: 100%;
+  padding: 32px 24px 24px 24px;
+
+  background: #fff;
+  border-radius: 24px;
+}
+
+.heading {
+  padding-bottom: 8px;
+  margin-bottom: 14px;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.heading h2 {
+  margin: 0;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.paginationContainer {
+  margin-top: 16px;
+  padding-top: 12px;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 22px 0;
+
+  font-size: 1.14rem;
+  font-weight: 500;
+  color: inherit;
+  text-align: left;
+  background: none;
+  border: none;
+
+  transition: background 0.16s;
+  cursor: pointer;
+}
+
+.header:hover {
+  background: #f3eeff;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.title {
+  flex: 1;
+
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.chevron {
+  margin-left: 12px;
+
+  font-size: 1.1em;
+  color: #b1a7ff;
+
+  transform: rotate(0deg);
+  transition: transform 0.22s;
+}
+
+.open {
+  color: var(--color-primary);
+
+  transform: rotate(180deg);
+}
+
+.body {
+  padding: 0 0 22px 28px;
+  position: relative;
+
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.shortAnswer {
+  margin-top: 14px;
+  margin-bottom: 18px;
+
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.moreBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+
+  font-size: 1.12em;
+  font-weight: 600;
+  background: none;
+  color: var(--color-primary);
+  border: none;
+
+  cursor: pointer;
+  transition: color 0.18s;
+}
+
+.moreBtn:hover {
+  color: #4501ad;
+}
+
+.arrow {
+  font-size: 1.19em;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 16px 12px 12px 12px;
+  }
+
+  .header {
+    padding: 16px 0;
+  }
+}
