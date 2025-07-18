@@ -15,7 +15,9 @@ interface QuestionsParams {
 
 export const questionsApi = createApi({
   reducerPath: "questionsApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "/questions" }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: `${import.meta.env.VITE_API_URL}/questions`,
+  }),
   endpoints: (builder) => ({
     getPublicQuestions: builder.query<QuestionsResponse, QuestionsParams>({
       query: (params = {}) => {

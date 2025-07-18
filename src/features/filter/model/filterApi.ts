@@ -8,7 +8,7 @@ import type {
 
 export const filterApi = createApi({
   reducerPath: "filterApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "/" }),
+  baseQuery: fetchBaseQuery({ baseUrl: `${import.meta.env.VITE_API_URL}` }),
   endpoints: (builder) => ({
     getSpecializations: builder.query<PaginatedResponse<Specialization>, void>({
       query: () => "specializations",
